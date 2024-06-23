@@ -1,0 +1,50 @@
+
+.input-conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#cansel2{
+    position:relative;
+    right: 320px;
+    bottom: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--main-fc);
+}
+
+
+.te12{
+    color: var(--main-fc);
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.loginHeaderCointeiner2{
+    display: flex;
+}
+
+.forgotPassword2{
+    font-size: 18px;
+    color: var(--main-fc);
+    cursor: pointer;
+    border-top: 1px solid rgb(76, 76, 76);
+    width: 95%;
+    text-align: center;
+    padding-top: 20px;
+}
+.rememberme2{
+    width: 93%;
+    display: flex;
+    cursor: pointer;
+}
+.rememberme2 p{
+    margin-left: 10px;
+    color: var(--main-fc);
+}
+input[type="checkbox"] {
+    accent-color: var(--main-bc);
+}
+#signupButton2{
+    cursor: pointer;
+}

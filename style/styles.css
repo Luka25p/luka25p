@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-color:#14213D #224942;;
+}
+
+:root{
+    --fz-s: 10px;
+    --fz-m: 14px;
+    --fz-l: 18px;
+    --fz-xl: 24px;
+    --main-fc: #E5E5E5;
+    --logo-ff : "Stalinist One", sans-serif;
+    --li-ff: "Bebas Neue", sans-serif;
+    --main-lts-s:2px;
+    --main-lts-m : 4px;
+    --main-lts-l : 8px;
+    --main-br: 10px;
+
+}
+p{
+    font-family: var(--li-ff);
+    letter-spacing: var(--main-lts-s);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #192A3C;
+    color: var(--main-fc);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+.buttons{
+    font-size: var(--fz-m);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.4s;
+    letter-spacing: var(--main-lts-s);
+    font-family: var(--li-ff);
+    font-weight: 200;
+    color: var(--main-fc);
+    border: 2px solid transparent;
+ }
+.buttons:hover{
+    color: rgb(214, 214, 0);
+    border-bottom: 2px solid rgb(216, 216, 0);
+}
+.conteiner{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    text-align: center;
+}
+.conteiner h1{
+    font-size: var(--fz-l);
+    font-family: var(--logo-ff);
+    letter-spacing: 10px;
+    cursor: pointer;
+    color: var(--main-fc);
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s,
+        cursor .8s step-end infinite alternate;
+}
+@keyframes typing{
+    from {width: 0}
+}
+.conteiner a{
+    text-decoration: none;
+}
+.conteiner ul{
+    display: flex;
+    gap: 50px;
+}
+.conteiner ul li{
+    font-size: var(--fz-m);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.4s;
+    letter-spacing: var(--main-lts-s);
+    font-family: var(--li-ff);
+    font-weight: 200;
+    color: var(--main-fc);
+    border: 2px solid transparent;
+}
+.conteiner ul li:hover{
+    color: rgb(214, 214, 0);
+    border-bottom: 2px solid rgb(216, 216, 0);
+}
+
+.serch{
+    font-size: var(--fz-l);
+    cursor: pointer;
+    font-size: var(--fz-l);
+    color: var(--main-fc);
+}
+aside{
+    position: fixed;
+    height: 100%;
+    background-color: white;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+}
+.cansel{
+    font-size: var(--fz-l);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+aside a{
+    text-decoration: none;
+}
+aside ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+aside ul li{
+    font-size: var(--fz-m);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.2s;
+    letter-spacing: var(--main-lts-s);
+    font-family: var(--li-ff);
+    font-weight: 200;
+    color: #000000;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: #224942;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bacimg{
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+main h1{
+    color: var(--main-fc);
+    font-family: var(--li-ff);
+    letter-spacing: var(--main-lts-l);
+    text-align: center;
+    font-size: 50px;
+}
+.mangacon{
+    z-index: 3;
+    width: 1200px;
+    height: 700px;
+    backdrop-filter: blur(100px);
+    border-radius: var(--main-br);
+    display: flex;
+    position: relative;
+    top: 50px;
+    padding: 0px 10px 0px 0px;
+}
+.mangacon img{
+    width: 500px;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+    padding-right: 10px;
+}
+.mangacon h1{
+    color: var(--main-fc);
+    font-size: 40px;
+    font-family: var(--li-ff);
+    letter-spacing: 6px;
+    text-align: center;
+}
+.mangacon p{
+    color: var(--main-fc);
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: var(--main-lts-s);
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    width: 100%;
+    font-family: var(--li-ff);
+}
+.info a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.info button{
+    font-size: var(--fz-xl);
+    background-color: #0D3A32;
+    color: var(--main-fc);
+    border: none;
+    padding: 30px 100px 30px 100px;
+    font-family: var(--logo-ff);
+    letter-spacing: var(--main-lts-m);
+    border-radius: var(--main-br);
+    transition: .3s ease-in;
+}
+.info button:hover{
+    color: rgb(214, 214, 0);
+    cursor: pointer;
+    background-color: red;
+}
+.main1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main1 h1{
+    color: rgb(255, 123, 0);
+    z-index: 10;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: grayscale(2) blur(10px);
+    border-radius: 60px 300px 60px 300px;
+    border: 9px solid black;
+}
+@media (max-width: 800px){
+    nav{
+        justify-content: space-evenly;
+    }
+    .buttons{
+        display: none;
+    }
+    .conteiner ul li{
+        display: none;
+    }
+    .conteiner h1{
+        font-size: var(--fz-s);
+    }
+    .conteiner ul{
+        display: none;
+    }
+    .conteiner h1:hover{
+        color: var(--main-fc);
+    }
+    .main1{
+        display: flex;
+        flex-direction: column;
+        gap: 300px;
+    }
+    .main1 h1{
+        font-size: 30px;
+        line-height: 50px;
+        color: rgb(212, 0, 255);
+        z-index: 10;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: grayscale(2) blur(10px);
+        border-radius: 10px;
+        border: 8px solid black;
+    }
+    .mangacon p{
+        display: none;
+    }
+    .mangacon{
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+    }
+    .mangacon h1{
+        position: relative;
+        top: 10px;
+    }
+    .mangacon img{
+        width: 300px;
+        object-fit: cover;
+        border-radius: 0px;
+    }
+    .info{
+        gap: 30px;
+    }
+    .info button:hover{
+        color: var(--main-fc);
+    }
+}
+@media (min-width:450px){
+    aside{
+        display: none;
+    }
+    .serch{
+        display: none;
+    }
+}
+.disnone{
+    display: none;
+}
